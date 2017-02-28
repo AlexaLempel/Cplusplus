@@ -14,15 +14,15 @@ int main() {
 			b[0]=0;
 		
 
-	 next_col:	if(++col>n-1) goto print;		//Increment column, then
+	 next_col:	if(++col>n-1) goto print;	//Increment column, then
 							//print board if all 8 queens
 							//are successfully placed.
 
 			b[col]=-1;			//Jump to right above board.
 
 	 next_row:	if(++b[col]>n-1) goto backtrack;	//Increment row, then
-							//backtrack if we run out of
-							//rows in our column.
+								//backtrack if we run out of
+								//rows in our column.
 
 			for(int i=0; i<col; i++)
 				if(b[i]==b[col] || col-i==abs(b[i]-b[col]))	//Test row & diags
