@@ -7,7 +7,7 @@ using namespace std;
 
 bool testsOK(int b[], int col);
 bool backtrack(int &col);
-void printBoard(int b[], int n, int &col, int &solutionCount);
+void printBoard(int b[], int n, int &solutionCount);
 
 
 int main() {		
@@ -27,7 +27,7 @@ int main() {
 		/*If increments column, then checks if we've exceeded the last 
 		  column on the board. Prints then backtracks if true.*/
 		if(++col>n-1) {
-			printBoard(b, n, col, solutionCount);
+			printBoard(b, n, solutionCount);
 			backtrack(col);
 		}
 		else b[col]=-1;		//Otherwise, jump to above board.				
@@ -68,7 +68,7 @@ bool backtrack(int &col) {
 }//end backtrack
 
 /*PrintBoard prints the board.*/
-void printBoard(int b[], int n, int &col, int &solutionCount) {
+void printBoard(int b[], int n, int &solutionCount) {
 	cout<<endl<<"Solution "<<++solutionCount<<": "<<"b{ ";
 	for(int i=0; i<n; i++) cout<<b[i]<<" ";
 	cout<<"}"<<endl;
