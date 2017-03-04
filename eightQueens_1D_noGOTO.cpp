@@ -6,7 +6,7 @@
 using namespace std;
 
 bool testsOK(int b[], int col);
-bool backtrack(int b[], int &col);
+bool backtrack(int &col);
 void printBoard(int b[], int n, int &col, int &solutionCount);
 
 
@@ -28,7 +28,7 @@ int main() {
 		  column on the board. Prints then backtracks if true.*/
 		if(++col>n-1) {
 			printBoard(b, n, col, solutionCount);
-			backtrack(b, col);
+			backtrack(col);
 		}
 		else b[col]=-1;		//Otherwise, jump to above board.				
 		
@@ -38,7 +38,7 @@ int main() {
 			/*If increments row, then checks if we've exceeded 
 			  the last row on the board. Backtracks if true.*/
 			if(++b[col]>n-1){
-				if(backtrack(b,col))	//Backtrack returns true and If
+				if(backtrack(col))	//Backtrack returns true and If
 					return 0;	//ends program when all solutions found.
 			}			
 			else if(testsOK(b, col))
@@ -61,7 +61,7 @@ bool testsOK(int b[], int col) {
   side of the board, indicating that all solutions have been found.
   If yes, returns true. used by main to trigger the end of the program.
   Otherwise, returns false. */ 
-bool backtrack(int b[], int &col) {
+bool backtrack(int &col) {
 	if(--col<0)
 		return true;
 	return false;	
