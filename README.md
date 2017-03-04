@@ -1,5 +1,12 @@
 # Cplusplus
 Projects written while learning C++
+<hr>
+
+<b>eightCellCross</b><br>  
+![alt text](http://i.imgur.com/inPvdwK.jpeg "8 Cell Cross") <br>
+A program that allocates the integers 1-8 to the cells arranged as in the above figure, subject to
+the restrictions that no two adjacent (vertically, horizontally, or diagonally) cells contain consecutive integers.<br>
+Uses the same backtracking scheme from the 8 Queens Problem solutions in this repository.<br>
 
 <hr>
 
