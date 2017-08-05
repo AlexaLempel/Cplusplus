@@ -26,10 +26,12 @@ Practice developing an iterative approach to a classic recursive problem. Given 
 <i>
 The following are a series of short programs that build upon the same backtracking algorithm, progressively exploring the way the implementation changes with varying choices of structure for data representation.</i><br>  
 
+<br>
+
 <b>eightQueens_FancyPrint</b><br> 
 Practicing pointers and typedef. A program that uses pointers to print graphic solutions to the classic problem of how to place eight queens on a chessboard so that no queen is threatening any other. Uses a 1D array to represent the board, and makes use of the GOTO command to implement looping.
 
-<hr>
+<br>
 
 <b>eightCellCross</b><br>  
 ![alt text](http://i.imgur.com/inPvdwK.jpeg "8 Cell Cross") <br>
@@ -37,17 +39,17 @@ Exploring how compartmentalizing tasks into functions allow the same program to 
 the restrictions that no two adjacent (vertically, horizontally, or diagonally) cells contain consecutive integers.<br>
 Uses the same backtracking scheme from the 8 Queens Problem solutions in this repository.<br>
 
-<hr>
+<br>
 
 <b>eightQueens_1D_noGOTO</b><br>
 Getting away from GOTOs. Prints all solutions to the classic problem of how to place eight queens on a chessboard so that no queen is threatening any other. Uses a 1D array to represent the board, and specifically does not use the GOTO command to implement looping.
 
-<hr>
+<br>
 
 <b>eightQueens_1D</b><br> 
 Exploring how just changing the structure in which data is represented (in this case, from 2D array chessboard to 1D array) can simplify implementating a given algorithm. Prints all solutions to the classic problem of how to place eight queens on a chessboard so that no queen is threatening any other. Uses a 1D array to represent the board, and makes use of the GOTO command to implement looping.
 
-<hr>
+<br>
 
 <b>eightQueens_2D</b><br>
 A first foray into backtracking. Prints all solutions to the classic problem of how to place eight queens on a chessboard so that no queen is threatening any other. Uses the intuitively obvious 2D array representation of the board, and makes use of the GOTO command to implement looping.
