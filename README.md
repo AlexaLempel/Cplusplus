@@ -18,7 +18,7 @@ Practicing file i/o, writing a basic class with overloaded operators, and choosi
 
 <hr>
 
-<b>Iterative_TowersOfHanoi<b><br>
+<b>Iterative_TowersOfHanoi</b><br>
 Practice developing an iterative approach to a classic recursive problem. Given three towers a, b, and c. We start with n rings on tower aand we need to transfer them to tower b subject to the following restrictions: 1. We can only move one ring at a time, and 2. We may never put a larger numbered ring on top of a smaller numberedone. There are always 3 towers. The program prompts the user for the number of rings, and prints the solution.
 
 <hr>
