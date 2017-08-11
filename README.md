@@ -4,7 +4,7 @@ Projects written while learning C++
 
 <b>matrix</b><br>
 Practicing: 
-  - writing template friends for a template class, using forward declerations.
+  - writing template friends for a template class, using forward declarations.
   - writing range-based for loop compatible classes, with begin and end iterators.
   - writing constructors that use intialization lists and curly brace initialization.
   - Throwing std exceptions.
