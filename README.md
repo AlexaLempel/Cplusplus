@@ -7,7 +7,8 @@ Practicing:
   - writing template friends for a template class, using forward declarations.
   - writing range-based for loop compatible classes, with begin and end iterators.
   - writing constructors that use intialization lists and curly brace initialization.
-  - Throwing std exceptions.
+  - Throwing std exceptions.<br>
+<br>
 An implementation of a template "safe array" class, SA. SA is an array data structure with a specifiable range indices (integers from data members "low" to "high," inclusive), which does not allow access outside of these array bounds. 
 An implementation of a template Matrix class, a 2D SA.  
 
