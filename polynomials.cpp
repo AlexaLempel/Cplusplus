@@ -19,7 +19,7 @@ class Poly{
 	public:
 
 	/*Default constructor*/
-	Poly(){};
+	Poly(){}
 
 	/*Copy constructor*/
 	Poly(const Poly & p){
